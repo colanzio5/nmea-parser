@@ -20,9 +20,9 @@ with open(FILE_PATH) as f:
 			# remove any spaces or new lines
 			b = b.replace('\n', '').replace(' ', '')
 			# write buffer to file
-			o.write('$' + b + '\n')
+			o.write(b + '\n')
 			# reset the string buffer
-			b = ""
+			b = c
 		
 		# otherwise add the character to the current row buffer
 		else:
